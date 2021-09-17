@@ -1,0 +1,247 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+* {
+    list-style-type: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 10px;
+    background: #f8f9fa;
+    height: 10vh;
+}
+
+header img {
+    width: 100px;
+    height: 54px;
+    object-fit: cover;
+}
+
+a {
+    font-size: 25px;
+    color: #F8B93F;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.search {
+    width: 30%;
+    height: 45%;
+}
+
+.search i {
+    position: absolute;
+    left: 40%;
+    top: 31px;
+}
+
+form {
+    padding: 40px;
+    width: 260px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form {
+    position: absolute;
+    top: 15%;
+    left: 30%;
+}
+
+.form-row {
+    margin: 20px;
+}
+
+.form-row>label {
+    display: block;
+    margin-bottom: 6px;
+}
+
+input[type='text'],
+input[type='tel'],
+input[type='email'],
+select,
+button,
+textarea {
+    width: 100%;
+    border-radius: 5px;
+    height: 42px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: inherit;
+    font-family: inherit;
+    background-color: #fff;
+}
+
+input[type='search'] {
+    width: 100%;
+    height: 100%;
+    border: 1px solid gray;
+}
+
+input[type='text']::placeholder,
+input[type='tel']::placeholder,
+input[type='email']::placeholder,
+textarea::placeholder {
+    color: rgb(175, 175, 175);
+}
+
+input[type='text']:focus,
+input[type='tel']:focus,
+input[type='email']:focus,
+textarea:focus {
+    color: rgb(68, 176, 255);
+}
+
+textarea {
+    height: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    min-height: 42px;
+    max-height: 200px;
+    resize: vertical;
+}
+
+.radio-container label {
+    display: inline-block;
+}
+
+.radio-container label+label {
+    margin-left: 10px;
+}
+
+button {
+    display: inline-block;
+    width: auto;
+    border: 0;
+    background-color: #eee;
+}
+
+button[type='submit'] {
+    margin-left: 15px;
+    color: white;
+    background-color: rgb(68, 176, 255);
+}
+
+button[type='submit']:hover,
+button[type='reset']:hover {
+    background-color: honeydew;
+    color: black;
+}
+
+#btn {
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    align-items: flex-start;
+    justify-content: end;
+    padding-right: 14%;
+}
+
+.navbar {
+    width: 21%;
+    height: 56vh;
+    position: absolute;
+    left: 6%;
+    top: 15%;
+}
+
+.card {
+    box-shadow: 1px 1px 5px #F8B93F;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.card:hover {
+    transform: rotate(2deg);
+}
+
+.card .image img {
+    border-radius: 5px;
+}
+
+.grid-card {
+    display: grid;
+    grid-template-columns: 220px 220px 220px 220px 220px;
+    gap: 10px;
+    position: absolute;
+    left: 22%;
+}
+
+.title {
+    text-transform: uppercase;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    padding: 0 20px;
+}
+
+section {
+    display: flex;
+}
+
+.desc {
+    height: 120px;
+    font-size: 11.5px;
+    padding: 0 20px;
+    color: gray;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    padding: 20px;
+}
+
+.modal {
+    width: 87%;
+    height: 55%;
+    background: #fff;
+    display: flex;
+    z-index: 5;
+    position: absolute;
+    left: 60px;
+    top: 160px;
+    opacity: 1;
+    border-radius: 2px;
+}
+
+@media (max-width: 1000px) {
+    .grid-card {
+        grid-template-columns: 250px 250px;
+    }
+    li a {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .grid-card {
+        grid-template-columns: 250px;
+    }
+    li a {
+        display: none;
+    }
+    ul {
+        position: absolute;
+        right: 40%;
+    }
+    input {
+        width: 75%;
+    }
+}

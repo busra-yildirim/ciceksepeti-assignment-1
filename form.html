@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="form.js" defer></script>
+    <title>Odev 1</title>
+</head>
+
+<body>
+    <!-- HEADER START-->
+    <header>
+        <div class="logo">
+            <img src="./assets/logo.png" alt="Patika.dev Logo">
+        </div>
+        <div class="search">
+            <input type="search" class="search-data" disabled>
+            <i class="fas fa-search fa-lg"></i>
+            </input>
+        </div>
+        <div class="account">
+            <i class="fas fa-user fa-2x"></i>
+        </div>
+    </header>
+    <!-- HEADER END-->
+    <!-- MAIN START-->
+    <main>
+        <nav class="navbar">
+            <ul>
+                <li class="navbar_title">
+                    <i class="fas fa-align-left  fa-2x"></i>
+                    <a href="form.html" style="padding-left: 17px;">Form</a>
+                </li>
+                <li class="navbar_title">
+                    <i class="fas fa-credit-card  fa-2x" style="width: 40px;"></i>
+                    <a href="card.html">Cards</a>
+                </li>
+            </ul>
+        </nav>
+        <section class="form">
+            <div>
+                <div class="form-row">
+                    <label for="company">Company</label>
+                    <input name="company" id="company" type="text" required placeholder="Please company name" />
+                </div>
+
+                <div class="form-row">
+                    <label for="fName">First Name</label>
+                    <input name="fName" id="fName" type="text" required placeholder="Please first name" />
+                </div>
+                <div class="form-row">
+                    <label for="lName">Last Name</label>
+                    <input name="lName" id="lName" type="text" required placeholder="Please last name" />
+                </div>
+
+                <div class="form-row">
+                    <label for="e-mail">E-mail Address</label>
+                    <input name="e-mail" id="e-mail" type="e-mail"></input>
+                </div>
+
+                <div class="form-row">
+                    <label for="title">Title</label>
+                    <input name="title" id="title" type="text" required placeholder="Please title" />
+                </div>
+                <div class="form-row">
+                    <label for="phone">Phone</label>
+                    <input name="phone" id="phone" type="tel" required />
+
+                </div>
+                <div class="form-row">
+                    <label for="cancel">Cancel Registration</label>
+                    <input name="cancel" id="cancel" type="checkbox" />
+                </div>
+                <div class="form-row">
+                    <label for="date">252 Training Session 2010</label>
+                    <select name="date" id="date">
+                        <option value="0">---Please select a date---</option>
+                        <option value="21/01/1990">21/01/1990</option>
+                        <option value="21/01/1992">21/01/1992</option>
+                        <option value="21/01/1993">21/01/1993</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label for="color">Job Function</label>
+                    <div class="radio-container">
+                        <label>
+                            <input type="radio" name="color" value="Campaign Management" checked />Campaign
+                            Management</label>
+                        <label>
+                            <input type="radio" name="color" value="CRM Administration" />CRM Administration</label>
+                        <label>
+                            <input type="radio" name="color" value="Email Deployment" />Email Deployment</label>
+                        <label>
+                            <input type="radio" name="color" value="Partner" />Partner</label>
+                        <label>
+                            <input type="radio" name="color" value="Employee" />Employee</label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label for="dReq">Dietary Requirements</label>
+                    <input name="dReq" id="dReq" type="text" required />
+                </div>
+                <div class="form-row">
+                    <label for="expectations">Expectations</label>
+                    <textarea name="expectations" id="expectations" cols="30" rows="15"></textarea>
+                </div>
+                <div class="form-row" id="btn">
+                    <button type="reset">Reset</button>
+                    <button type="submit" id="submit">Submit</button>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <!-- HEADER END-->
+
+</body>
+
+</html>
